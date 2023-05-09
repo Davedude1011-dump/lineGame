@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+        <script src="https://www.desmos.com/api/v1.5/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
+        <script src="function.js" defer></script>
+        <script src="canvas.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="example1" class="calculator"></div>
+        <div class="input-boxes-outer">
+            <div class="input-outer-box">
+                <div class="text">
+                    y = 
+                <input type="text" id="m">
+                    x + 
+                <input type="text" id="c">
+                </div>
+            </div>
+            <button class="button-box" onclick="checkInputs()">check</button>
+        </div>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+    </body>
+</html>
